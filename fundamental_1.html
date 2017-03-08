@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<script>
+			var x = [3,5,"Dojo", "rocks", "Michael", "Sensei"];
+
+			//Print each value in array:
+
+			for (var i = 0; i < x.length; i ++) {
+				console.log(x[i]);
+			}
+
+			// Add a new value(100) in the array using push method
+
+			x.push(100);
+			console.log(x[i]);
+
+			// add a new array ["hello", "world", "JavaScript is Fun"] to variable X
+
+			x.push(["hello", "world", "JavaScript is Fun"]);
+			console.log(x);
+
+			// Create a simple for loop that sums all the numbers between 1 to 500. Have console log the final sum. 
+			var sum = 0;
+			for (var i = 1; i < 501; i++) {
+				sum += i;
+			}
+			console.log(sum);
+
+			// Write a loop that will go through the array [1, 5, 90, 25, -3, 0], find the minimum value,find the average of all of the value,  and then print it 
+
+			var array = [1,5,90,25,-3,0];
+			var min = array[0];
+			for (var i = 1; i <array.length; i ++) {
+				if (array[i] < min ) {
+					min = array[i];
+				}
+			}
+			console.log(min);
+
+
+			// find the averager of the array
+
+			var sum = array[0];
+			for (var i = 1; i < array.length; i ++) {
+				sum += array[i];
+			}
+			console.log(sum/array.length);
+
+			// interate through object
+			var new_ninja = {
+				name: 'Jessica',
+				profession: 'coder',
+				favorite_language: 'JavaScript',
+				dojo: 'Dallas'
+			};
+			for (var key in new_ninja) {
+				console.log(key + " : " + new_ninja[key]);
+			}
+			
+		</script>
+	</title>
+</head>
+<body>
+
+</body>
+</html>
